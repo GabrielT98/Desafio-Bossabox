@@ -40,7 +40,7 @@
             <h5 class="modal-title" id="add-modal-label">+ Add new tool</h5>
           </div>
           <div class="modal-body">
-              <form id="add" action="" method="post" enctype="application/x-www-form-urlencoded" onsubmit="">
+              <form id="add" action="{{ url_for('inserir')}}" method="post" enctype="application/x-www-form-urlencoded">
                   <label for="ferramenta-nome">Tool Name</label>
                   <input id="ferramenta-nome" type="text" name="nome">
 
@@ -52,12 +52,13 @@
 
                   <label for="ferramenta-tags">Tags</label>
                   <input id="ferramenta-tags" name="tags">
+                  <input type="submit">
 
               </form>
           </div>
           <div class="modal-footer">
 
-            <button type="button" class="btn btn-primary">Add tool</button>
+
           </div>
         </div>
       </div>
