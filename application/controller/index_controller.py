@@ -16,7 +16,7 @@ def inserir():
     nome = request.form.get('nome',None)
     link = request.form.get('link',None)
     descricao = request.form.get('descricao',None)
-    tags = request.form.get('tags',None)
+    tags = request.form.get('tags',None).split(" ")
     ferramenta = Ferramenta(id,nome,link,descricao,tags)
     ferramenta_dao.adicionar_ferramenta(ferramenta)
 
@@ -40,7 +40,7 @@ def buscar():
                 lista_ferramenta_filtrada.append(ferramenta)
         return render_template("index.html",list_ferramentas = lista_ferramenta_filtrada)
 
-    else:
+    elif request.form.getlist('search') == ['1']:
         palavra_chave = request.args.get('palavra_chave')
         for ferramenta in list_ferramentas:
             if palavra_chave in ferramenta.get_tags():

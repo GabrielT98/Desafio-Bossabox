@@ -1,7 +1,7 @@
 from typing import List
 
 class Ferramenta():
-    def __init__(self,id :int,nome: str,link: str,descricao:str,tags: str):
+    def __init__(self,id :int,nome: str,link: str,descricao:str,tags: List):
         self.__id = id
         self.__nome = nome
         self.__link = link
