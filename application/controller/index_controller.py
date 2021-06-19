@@ -8,3 +8,5 @@ list_ferramentas = ferramenta_dao.listar_ferramentas()
 @app.route("/")
 def index():
     return render_template("index.html",list_ferramentas = list_ferramentas)
+
+@app.route("/inserir")

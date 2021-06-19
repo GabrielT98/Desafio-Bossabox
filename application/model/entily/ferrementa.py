@@ -1,7 +1,8 @@
 from typing import List
 
 class Ferramenta():
-    def __init__(self,nome: str,link: str,descricao:str):
+    def __init__(self,id :int,nome: str,link: str,descricao:str)
+        self.__id = id
         self.__nome = nome
         self.__link = link
         self.__descricao = descricao
@@ -9,6 +10,9 @@ class Ferramenta():
 
     def set_tags(self,tags:List):
         self.__tags = tags
+
+    def get_id(self):
+        return self.__id
     def get_nome(self):
         return self.__nome
     def get_link(self):
