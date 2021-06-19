@@ -12,6 +12,19 @@
     <input type="checkbox" id="checkbox-tags" name="search in tags only">
     <a>add</a>
 
+    {% if list_ferramentas  == [] %}
+        <p>No tools registered</p>
+    {% else %}
+    {% for ferramenta in list_ferramentas %}
+        <section class="ferramenta">
+            <h1>{{ferramenta.get_nome() }}</h1>
+            <p>{{ ferramenta.get_descricao() }}</p>
+            <p>{{ ferramenta.get_tags() }}</p>
+        </section>
+        {% endfor %}
+    {%endif%}
+
+
 
 </body>
 </html>
