@@ -1,14 +1,11 @@
 from typing import List
 
 class Ferramenta():
-    def __init__(self,id :int,nome: str,link: str,descricao:str):
+    def __init__(self,id :int,nome: str,link: str,descricao:str,tags: str):
         self.__id = id
         self.__nome = nome
         self.__link = link
         self.__descricao = descricao
-        self.__tags = None
-
-    def set_tags(self,tags:List):
         self.__tags = tags
 
     def get_id(self):

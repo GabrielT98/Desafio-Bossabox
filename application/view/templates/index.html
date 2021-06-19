@@ -11,8 +11,12 @@
 <body>
     <h1>VUTTR</h1>
     <h2>Very Useful Tools to Remenber</h2>
-    <input type="text" id="txtBusca" placeholder=search>
-    <input type="checkbox" id="checkbox-tags" name="search in tags only">
+    <form id="form-busca" action="{{url_for('buscar')}}" method="get" enctype="application/x-www-form-urlencoded">
+        <input type="text" id="txtBusca" name="palavra-chave" placeholder=search>
+        <input type="checkbox" id="checkbox-tags" value="1" name="search"> search in tags only
+        <input type="submit" hidden="True">
+    </form>
+
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-modal">
      Add
     </button>
