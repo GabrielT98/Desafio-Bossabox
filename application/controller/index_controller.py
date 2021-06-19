@@ -21,5 +21,11 @@ def inserir():
     ferramenta.set_tags(tags)
     ferramenta_dao.adicionar_ferramenta(ferramenta)
     return render_template("index.html", list_ferramentas=list_ferramentas)
+@app.route("/remover/<id>")
+def remover(id: int):
+    for ferramenta in list_ferramentas:
+        if ferramenta.get_id() == int(id):
+            list_ferramentas.remove(ferramenta)
+            return render_template("index.html", list_ferramentas=list_ferramentas)
 
 
