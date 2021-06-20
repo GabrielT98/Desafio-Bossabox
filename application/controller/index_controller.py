@@ -20,7 +20,7 @@ def inserir():
     ferramenta = Ferramenta(id,nome,link,descricao,tags)
     ferramenta_dao.adicionar_ferramenta(ferramenta)
 
-    return render_template("index.html", list_ferramentas=list_ferramentas)
+    return redirect(url_for('index'))
 @app.route("/remover/<id>",methods = ["GET"])
 def remover(id: int):
     for ferramenta in list_ferramentas:
