@@ -1,3 +1,124 @@
-body{
-    background-color: grey;
+@charset "UTF-8";
+*{
+    background-color: #e8e1e1;
+
+}
+
+#container h1,h2{
+    margin-top: 80px;
+    margin-left: 380px;
+    padding-bottom: 3px;
+}
+div#pesquisa-add{
+    margin-left: 380px;
+
+}
+.form-search{
+    float: left;
+
+
+}
+#txtBusca{
+    background-color: white;
+}
+.add-form-pesquisar{
+    float: right;
+    margin-right: 400px;
+
+}
+.add-form-pesquisar button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 80px;
+    height: 35px;
+
+
+}
+
+.ferramenta{
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 570px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.ferramentas{
+    margin-top: 85px;
+    margin-left: 380px;
+
+}
+
+#unir-nome-remover button{
+    float: right;
+    color: black;
+    background-color: white;
+    border: none;
+}
+#unir-nome-remover a{
+    float: left;
+}
+
+#unir-nome-remover{
+    margin-bottom: 30px;
+}
+
+.tags p {
+    float: left;
+    padding-right: 10px;
+    background-color: white;
+}
+.ferramenta p,a{
+    background-color: white;
+    margin-left: 5px;
+}
+#p-descricao{
+    margin-left: 6px;
+}
+.ferramenta a{
+    font-family: Arial;
+    font-size: 20px;
+}
+.modal-header{
+    background-color: white;
+}
+
+.modal-body input,textarea,label{
+    width: 400px;
+    background-color: white;
+
+}
+#submit-add-form{
+    width: 100px;
+    margin-left: 340px;
+    margin-top: 20px;
+    background-color: white;
+}
+.modal-body{
+    background-color: white;
+}
+.modal-body form{
+    background-color: white;
+}
+.modal-title{background-color: white;}
+
+#a-remover{
+    background-color: white;
+    color: black;
+    margin-left: 110px;
+
+}
+#a-remover:hover{
+    color: grey;
+}
+#p-modal-remover{
+    font-family: Arial;
+    font-size: 25px;
+
+
+}
+.modal-title button,span{
+    background-color: white;
 }
